@@ -1,0 +1,8 @@
+pizza
+ketchup
+hamburger
+milk
+carrot
+apple
+banana
+kiwi

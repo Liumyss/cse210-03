@@ -35,6 +35,7 @@ namespace cse210_03
         /// </summary>
         /// <param name="prompt">The given prompt.</param>
         /// <returns>Inputted text.</returns>
+        
         public string ReadText(string prompt)
         {
             Console.Write(prompt);

@@ -1,0 +1,16 @@
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\bin\Debug\net5.0\cse210-03.exe
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\bin\Debug\net5.0\cse210-03.deps.json
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\bin\Debug\net5.0\cse210-03.runtimeconfig.json
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\bin\Debug\net5.0\cse210-03.runtimeconfig.dev.json
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\bin\Debug\net5.0\cse210-03.dll
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\bin\Debug\net5.0\cse210-03.pdb
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\obj\Debug\net5.0\cse210-03.csproj.AssemblyReference.cache
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\obj\Debug\net5.0\cse210-03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\obj\Debug\net5.0\cse210-03.AssemblyInfoInputs.cache
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\obj\Debug\net5.0\cse210-03.AssemblyInfo.cs
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\obj\Debug\net5.0\cse210-03.csproj.CoreCompileInputs.cache
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\obj\Debug\net5.0\cse210-03.dll
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\obj\Debug\net5.0\refint\cse210-03.dll
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\obj\Debug\net5.0\cse210-03.pdb
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\obj\Debug\net5.0\cse210-03.genruntimeconfig.cache
+C:\Users\matth\Desktop\My Projects\School Projects\cse210\cse210-03\obj\Debug\net5.0\ref\cse210-03.dll
