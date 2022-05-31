@@ -22,7 +22,7 @@ namespace cse210_03
         public int numberOfGuesses = 0;
 
         private bool checkInput;
-        List<char> guessedLetters = new List<char>();
+        public List<char> guessedLetters = new List<char>();
         public string currentGuess = "test";
 
 
@@ -57,13 +57,14 @@ namespace cse210_03
             jumper.printJumper(tries);
             checkInput = true;
 
-            while (checkInput){
+            while (checkInput)
+            {
                 currentGuess = terminal.ReadText("\nGuess a letter [a-z]: ");
                 checkInput = jumper.checkInput(guessedLetters, currentGuess);
             }
 
             guessedLetters.Add(currentGuess[0]);
-            
+
 
         }
 
@@ -81,15 +82,17 @@ namespace cse210_03
         {
             Console.WriteLine("");
 
-            if (isPlaying){
+            if (isPlaying)
+            {
                 word.printGuess();
             }
-            else {
+            else
+            {
                 jumper.printJumper(tries);
                 word.printAnswer();
                 Console.WriteLine("\n");
             }
-  
+
         }
     }
 }

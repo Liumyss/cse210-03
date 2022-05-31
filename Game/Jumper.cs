@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 namespace cse210_03
 {
-    public class Jumper{
+    public class Jumper
+    {
         private List<string> jumper = new List<string>();
         private int count;
         private int trueTries = 0;
@@ -20,54 +21,68 @@ namespace cse210_03
             jumper.Add("  / \\");
         }
 
-        public bool checkInput(List<char> guesses, string currentguess){
+        public bool checkInput(List<char> guesses, string currentguess)
+        {
 
-            if (guesses.Contains(currentguess[0])){
+            if (guesses.Contains(currentguess[0]))
+            {
 
                 Console.WriteLine("You already guessed that letter!");
                 return true;
             }
-            else {
+            else
+            {
 
                 return false;
             }
 
         }
 
-        public bool checkJumper(List<char> wordGuess, int tries){
+        public bool checkJumper(List<char> wordGuess, int tries)
+        {
 
             count = 0;
 
-            for(int i=0; i < wordGuess.Count; i++){
-                if (wordGuess[i] != '_'){
+            for (int i = 0; i < wordGuess.Count; i++)
+            {
+                if (wordGuess[i] != '_')
+                {
                     count++;
                 }
-                else {
+                else
+                {
 
                 }
             }
-            if (count == wordGuess.Count){
+            if (count == wordGuess.Count)
+            {
                 return false;
-                
+
             }
-            else if(tries == 4){
+            else if (tries == 4)
+            {
                 return false;
             }
-            else {
+            else
+            {
                 return true;
             }
         }
 
-        public void printJumper(int tries){  
-            if (tries == trueTries){
+        public void printJumper(int tries)
+        {
+            if (tries == trueTries)
+            {
 
             }
-            else if(tries == 4){
-                jumper.RemoveRange(0,1);
+            else if (tries == 4)
+            {
+                jumper.RemoveRange(0, 1);
                 jumper[0] = "   X";
             }
-            else{
-                jumper.RemoveRange(0,1);
+            else
+            {
+                jumper.RemoveRange(0, 1);
                 trueTries++;
             }
             Console.WriteLine(string.Format("{0}", string.Join("\n", jumper)));
