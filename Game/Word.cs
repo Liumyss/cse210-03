@@ -10,7 +10,7 @@ namespace cse210_03
         public string hiddenword;
         public List<char> answer = new List<char>();
         public List<char> guess = new List<char>();
-        private List<string> wordsList = new List<string>();
+        private List<string> _wordsList = new List<string>();
 
         private Terminal terminal = new Terminal();
 

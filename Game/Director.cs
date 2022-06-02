@@ -12,8 +12,8 @@ namespace cse210_03
     public class Director
     {
 
-        private bool isPlaying = true;
-        private string wordToGuess;
+        private bool _isPlaying = true;
+        private string _wordToGuess;
 
         private Terminal terminal = new Terminal();
         public Word word = new Word();
@@ -21,7 +21,7 @@ namespace cse210_03
         public int tries = 0;
         public int numberOfGuesses = 0;
 
-        private bool checkInput;
+        private bool _checkInput;
         public List<char> guessedLetters = new List<char>();
         public string currentGuess = "test";
 
@@ -38,12 +38,12 @@ namespace cse210_03
         /// </summary>
         public void StartGame()
         {
-            wordToGuess = word.GetWord();
-            word.listWord(wordToGuess);
+            _wordToGuess = word.GetWord();
+            word.listWord(_wordToGuess);
             word.createHiddenWord();
             word.printGuess();
 
-            while (isPlaying)
+            while (_isPlaying)
             {
                 GetInputs();
                 DoUpdates();
@@ -55,12 +55,12 @@ namespace cse210_03
         {
             Console.WriteLine("\n");
             jumper.printJumper(tries);
-            checkInput = true;
+            _checkInput = true;
 
-            while (checkInput)
+            while (_checkInput)
             {
                 currentGuess = terminal.ReadText("\nGuess a letter [a-z]: ");
-                checkInput = jumper.checkInput(guessedLetters, currentGuess);
+                _checkInput = jumper.checkInput(guessedLetters, currentGuess);
             }
 
             guessedLetters.Add(currentGuess[0]);
@@ -74,7 +74,7 @@ namespace cse210_03
             numberOfGuesses = guessedLetters.Count;
             int usedTries = word.compare(guessedLetters, numberOfGuesses);
             tries = tries + usedTries;
-            isPlaying = jumper.checkJumper(word.guess, tries);
+            _isPlaying = jumper.checkJumper(word.guess, tries);
         }
 
 
@@ -82,7 +82,7 @@ namespace cse210_03
         {
             Console.WriteLine("");
 
-            if (isPlaying)
+            if (_isPlaying)
             {
                 word.printGuess();
             }

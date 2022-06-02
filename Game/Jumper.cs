@@ -5,20 +5,20 @@ namespace cse210_03
 {
     public class Jumper
     {
-        private List<string> jumper = new List<string>();
-        private int count;
-        private int trueTries = 0;
+        private List<string> _jumper = new List<string>();
+        private int _count;
+        private int _trueTries = 0;
 
 
         public Jumper()
         {
-            jumper.Add("  ___");
-            jumper.Add(" /___\\");
-            jumper.Add(" \\   /");
-            jumper.Add("  \\ /");
-            jumper.Add("   O");
-            jumper.Add("  /|\\");
-            jumper.Add("  / \\");
+            _jumper.Add("  ___");
+            _jumper.Add(" /___\\");
+            _jumper.Add(" \\   /");
+            _jumper.Add("  \\ /");
+            _jumper.Add("   O");
+            _jumper.Add("  /|\\");
+            _jumper.Add("  / \\");
         }
 
         public bool checkInput(List<char> guesses, string currentguess)
@@ -41,20 +41,20 @@ namespace cse210_03
         public bool checkJumper(List<char> wordGuess, int tries)
         {
 
-            count = 0;
+            _count = 0;
 
             for (int i = 0; i < wordGuess.Count; i++)
             {
                 if (wordGuess[i] != '_')
                 {
-                    count++;
+                    _count++;
                 }
                 else
                 {
 
                 }
             }
-            if (count == wordGuess.Count)
+            if (_count == wordGuess.Count)
             {
                 return false;
 
@@ -71,21 +71,21 @@ namespace cse210_03
 
         public void printJumper(int tries)
         {
-            if (tries == trueTries)
+            if (tries == _trueTries)
             {
 
             }
             else if (tries == 4)
             {
-                jumper.RemoveRange(0, 1);
-                jumper[0] = "   X";
+                _jumper.RemoveRange(0, 1);
+                _jumper[0] = "   X";
             }
             else
             {
-                jumper.RemoveRange(0, 1);
-                trueTries++;
+                _jumper.RemoveRange(0, 1);
+                _trueTries++;
             }
-            Console.WriteLine(string.Format("{0}", string.Join("\n", jumper)));
+            Console.WriteLine(string.Format("{0}", string.Join("\n", _jumper)));
         }
     }
 }
