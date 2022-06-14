@@ -6,3 +6,15 @@ carrot
 apple
 banana
 kiwi
+mayonnaise
+purple
+red
+yellow
+green
+kangourou
+giraffe
+bike
+mountain
+idaho
+utah
+france
